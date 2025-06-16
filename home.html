@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - WWMMCGC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="IMG-20250102-WA0249.jpg" alt="WWMMCGC Logo">
+            <span>WWMMCGC</span>
+        </div>
+        <div class="nav-links">
+            <a href="home.html"><b>Dashboard</b></a>
+            <a href="communityA.html"><b>Community Announcement</b></a>
+            <a href="event.html"><b>Events</b></a>
+            <a href="#" id="community-form-link"><b>Community Form</b></a>
+            <a href="leaderboard.html"><b>Leaderboard</b></a>
+        </div>
+        <div class="user-actions">
+            <input type="text" placeholder="Search..." class="search-input">
+            <button class="join-btn" id="join-community-btn">Join Community</button>
+            <!-- Arrow Icon for Logout Box Toggle -->
+            <div class="arrow-icon" id="arrow-icon">&#9650;</div>
+            <!-- Logout Box -->
+            <div class="logout-box" id="logout-box" style="display: none;">
+                <button class="logout-btn" id="logout-btn">Logout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section with Background Image -->
+    <div class="hero-section" style="background-image: url('background-gaming-cave.avif');">
+        <h1>WELCOME TO WWMMCGC - ONLINE GAMING SITE</h1>
+        <h2>World Wide Mini Militia Classic Global Community</h2>
+        <button class="about-btn" id="about-community-btn">About Community</button>
+    </div>
+
+<!-- Scripts -->
+    <script src="script.js" type="module"></script>
+</body>
+</html>

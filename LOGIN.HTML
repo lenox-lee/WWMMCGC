@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - WWMMCGC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="signup-page">
+        <div class="signup-container">
+            <div class="signup-left">
+                <h2>Welcome back!</h2>
+                <form id="login-form">
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <button type="submit" class="signup-btn">Login</button>
+                </form>
+                <div class="login-link">
+                    <p class="footer-text">@2025 WWMMCGC</p>
+                    <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+                </div>
+            </div>
+
+            <div class="signup-right">
+                <h2>WWMMCGC</h2>
+                <div class="promo-text">
+                    <h3>YOU WANT MOST GAMES IN HERE.</h3>
+                    <p>The Punisher "The Ghost" Server</p>
+                    <button class="view-more-btn">View More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase SDK Imports -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.7.1/firebase-app.js";
+        import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.7.1/firebase-auth.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyDBR7-eY0fIVEW2usRbawXAD49j4N2bc9U",
+            authDomain: "wwmmcgc-web-mmc.firebaseapp.com",
+            projectId: "wwmmcgc-web-mmc",
+            storageBucket: "wwmmcgc-web-mmc.appspot.com",
+            messagingSenderId: "301934627104",
+            appId: "1:301934627104:web:5dbb8ac196924b77e86f45"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        document.getElementById('login-form').addEventListener('submit', async (event) => {
+            event.preventDefault();
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            try {
+                await signInWithEmailAndPassword(auth, email, password);
+                window.location.href = "home.html";
+            } catch (error) {
+                console.error("Login Error: ", error.message);
+                alert(error.message);
+            }
+        });
+    </script>
+</body>
+</html>

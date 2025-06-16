@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Welcome - WWMMCGC</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Navigation Section -->
+    <div class="top-nav">
+        <div class="right-nav">
+            <a href="#" class="toggle-link" data-target="home-content">Home</a>
+            <div id="home-content" class="toggle-content" style="display:none; padding: 5px 10px;">
+                Welcome to WWMMCGC, your go-to community for all things Mini Militia Classic and beyond. Explore exciting content and join the fun!
+            </div>
+
+            <a href="#" class="toggle-link" data-target="latest-news-content">Latest News</a>
+            <div id="latest-news-content" class="toggle-content" style="display:none; padding: 5px 10px;">
+                Stay updated with the newest game updates, community announcements, and upcoming tournaments.
+            </div>
+
+            <a href="#" class="toggle-link" data-target="game-overview-content">Game Overview</a>
+            <div id="game-overview-content" class="toggle-content" style="display:none; padding: 5px 10px;">
+                Discover the key features and gameplay elements that make Mini Militia Classic a favorite among our community members.
+            </div>
+
+            <a href="#" class="toggle-link" data-target="tutorials-content">Tutorials</a>
+            <div id="tutorials-content" class="toggle-content" style="display:none; padding: 5px 10px;">
+                Learn tips, tricks, and detailed walkthroughs to level up your skills and dominate the battlefield.
+            </div>
+
+            <a href="#" class="toggle-link" data-target="community-buzz-content">Community buzz</a>
+            <div id="community-buzz-content" class="toggle-content" style="display:none; padding: 5px 10px;">
+                Connect with fellow gamers, see community highlights, and get involved in exciting events and discussions.
+            </div>
+        </div>
+        <div class="left-nav">
+            <button class="btn-primary" onclick="window.location.href='signup.html'">Join Us</button>
+            <button class="btn-secondary" onclick="window.location.href='news.html'">Latest News</button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero-container">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="welcome-text">
+                <h1>WELCOME TO</h1>
+                <h1>WWMMCGC!</h1>
+                <p class="sub-heading">Dive into the ultimate gaming experience with our latest news, in-depth reviews, and live gameplay sessions.</p>
+                <p class="sub-text">Join our passionate community of gamers and discover new adventures every week. Connect, share, and explore with us.</p>
+            </div>
+            <div class="button-group" style="display: flex; gap: 8px;">
+                <button class="btn-primary" onclick="window.location.href='signup.html'">Sign Up</button>
+                <button class="btn-secondary" onclick="window.location.href='login.html'">Login</button>
+            </div>
+        </div>
+    </div>
+
+<script>
+    // Toggle content below nav items on click
+    document.querySelectorAll('.toggle-link').forEach(link => {
+        link.addEventListener('click', e => {
+            e.preventDefault();
+            const targetId = link.getAttribute('data-target');
+            const content = document.getElementById(targetId);
+
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+            } else {
+                // Optionally close others first:
+                document.querySelectorAll('.toggle-content').forEach(c => c.style.display = 'none');
+                content.style.display = 'block';
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

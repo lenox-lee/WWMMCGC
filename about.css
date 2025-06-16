@@ -1,0 +1,200 @@
+/* about.css */
+
+.about-page * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.about-page {
+  background-image: url('vibrant-esports-event-background-with-neon-game-controllers-futuristic-digital-elements_43969-62587.avif');
+  background-size: cover;        
+  background-position: center;   
+  background-repeat: no-repeat;  
+  min-height: 100vh;         
+}
+
+/* Container */
+.about-page .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Back Button */
+.about-page .back-button {
+  display: inline-block;
+  background-color: #3b82f6;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.about-page .back-button:hover {
+  background-color: #2563eb;
+}
+
+/* Join Buttons */
+.about-page .join-button {
+  display: inline-block;
+  background-color: #7122c5;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px 0;
+}
+
+.about-page .join-button:hover {
+  background-color: #7416a3;
+}
+
+/* Hero Section */
+.about-page .hero {
+  background: linear-gradient(90deg, #4b22c5, #f6f33b);
+  padding: 40px 20px;
+  border-radius: 16px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-page .hero h1 {
+  font-size: 3rem;
+  margin-bottom: 12px;
+}
+
+.about-page .hero p {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+/* Layout grid */
+.about-page .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 24px;
+}
+
+/* Sidebar */
+.about-page .sidebar {
+  background-color: #754597;
+  border-radius: 12px;
+  padding: 24px;
+  position: sticky;
+  top: 20px;
+  height: fit-content;
+}
+
+.about-page .sidebar h2 {
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+  color: #190238;
+}
+
+.about-page .sidebar ul {
+  list-style: none;
+}
+
+.about-page .sidebar ul li {
+  margin-bottom: 12px;
+}
+
+.about-page .sidebar ul li a {
+  color: #0a0f6a;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.about-page .sidebar ul li a:hover {
+  color: #2a0494;
+  text-decoration: underline;
+}
+
+/* Main content */
+.about-page .main-content {
+  overflow-y: auto;
+  max-height: 80vh;
+  padding-right: 10px;
+}
+
+/* Sections */
+.about-page section {
+  background-color: #222;
+  border-radius: 16px;
+  padding: 30px 24px;
+  margin-bottom: 32px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.about-page section h2 {
+  color: #ccd5b7;
+  margin-bottom: 16px;
+  font-size: 2rem;
+}
+
+/* Clan Directory cards */
+.about-page .clan-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  max-height: 380px;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+.about-page .clan-card {
+  background-color: #4207ae;
+  border-radius: 12px;
+  padding: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #ddd;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.about-page .clan-card:hover {
+  background-color: #380451;
+  color: #111;
+}
+
+/* Join Community section */
+.about-page .join-section {
+  background-color: #28043a;
+  padding: 40px 24px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(31, 0, 55, 0.7);
+  color: #031c31;
+  margin-top: 40px;
+}
+
+.about-page .join-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-page .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .about-page .sidebar {
+    position: relative;
+    top: auto;
+    margin-bottom: 32px;
+  }
+
+  .about-page .main-content {
+    max-height: none;
+  }
+}

@@ -1,0 +1,84 @@
+body {
+  background-image: url('vibrant-esports-event-background-with-neon-game-controllers-futuristic-digital-elements_43969-62587.avif');
+  background-size: cover;       /* Cover entire viewport */
+  background-position: center;  /* Center the image */
+  background-repeat: no-repeat; /* Don’t repeat the image */
+  background-attachment: fixed; /* Make the background fixed while scrolling */
+  /* Optional: Add a subtle overlay to improve readability */
+  position: relative;
+  z-index: 0;
+}
+
+.announcements h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #d4aaff;
+  text-align: center;
+}
+
+.announcement-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.announcement-card .date {
+  font-size: 0.8rem;
+  color: #ccc;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.announcement-card h3 {
+  margin: 0 0 8px 0;
+  font-weight: 600;
+  color: #e0b0ff;
+}
+
+.announcement-card p {
+  margin: 0 0 10px 0;
+  line-height: 1.4;
+}
+
+.announcement-card .read-more {
+  color: #a36eff;
+  text-decoration: underline;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.announcement-card .read-more:hover {
+  color: #d0a3ff;
+}
+
+.more-text {
+  display: none;  /* Initially hidden */
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 6px;
+  color: #b3b3b3;
+}
+
+.more-text p {
+  margin: 0;
+  line-height: 1.4;
+}
+/* Back Button */
+.event-page .back-button {
+  display: inline-block;
+  background-color: #0a2f66;
+  color: rgb(240, 233, 233);
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}

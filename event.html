@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events & Tournaments</title>
+  <link rel="stylesheet" href="event.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Back Button -->
+      <div class="container event-page">
+  <a href="home.html" class="back-button">← Back to Home</a>
+  
+</div>
+    <h1>Events & Tournaments</h1>
+
+<!-- Upcoming Events -->
+    <section class="section">
+      <h2>Upcoming Events</h2>
+      <div class="card">
+        <h3>WWMMCGC Championship</h3>
+        <p>Date: 2025-06-10</p>
+        <p>Time: 4:00 PM UTC</p>
+        <p>Join the epic battle to prove your skills!</p>
+        <button onclick="redirectToForm()">Register Now</button>
+      </div>
+    </section>
+
+    <!-- Ongoing Tournaments -->
+    <section class="section">
+      <h2>Ongoing Tournaments</h2>
+      <div class="card">
+        <h3>Global Domination Tournament</h3>
+        <p>Current Leaderboard:</p>
+        <ul class="leaderboard">
+  <li>
+    <img src="1.jpg" alt="Player1" class="player-pic" />
+    Player1 - 1500 points
+  </li>
+  <li>
+    <img src="2.jpg" alt="Player2" class="player-pic" />
+    Player2 - 1200 points
+  </li>
+  <li>
+    <img src="3.jpg" alt="Player3" class="player-pic" />
+    Player3 - 1100 points
+  </li>
+</ul>
+
+      </div>
+    </section>
+
+    <!-- Past Events -->
+    <section class="section">
+      <h2>Past Events</h2>
+      <div class="card">
+        <h3>March Madness Clash</h3>
+        <p>Winner: Player1</p>
+        <button onclick="openRecapVideo()">View Recap</button>
+
+<script>
+  function openRecapVideo() {
+    const videoURL = "YOUR_VIDEO_RECAP_LINK_HERE";
+    window.open(videoURL, "_blank");
+  }
+</script>
+      </div>
+    </section>
+
+    <!-- Announcements & Updates -->
+    <section class="section">
+      <h2>Announcements & Updates</h2>
+      <div class="card">
+        <p>Stay tuned for more events and updates!</p>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    function redirectToForm() {
+      const formURL = "YOUR_GOOGLE_FORM_LINK_HERE";
+      window.location.href = formURL;
+    }
+  </script>
+
+</body>
+</html>
+

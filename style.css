@@ -1,0 +1,599 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('vibrant-esports-event-background-with-neon-game-controllers-futuristic-digital-elements_43969-62587.avif');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #5c1456;
+}
+
+.left-nav {
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.left-nav .btn-primary, .left-nav .btn-secondary {
+    background-color: #5e34db;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.right-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.right-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer; /* show pointer on hover */
+    position: relative;
+}
+
+.right-nav a:hover {
+    color: #3498db;
+}
+
+/* New styles for toggle content under nav links */
+.toggle-content {
+    background-color: rgba(92, 20, 86, 0.8); /* slightly transparent purple */
+    margin-top: 5px;
+    font-size: 13px;
+    line-height: 1.4;
+    border-radius: 4px;
+    max-width: 250px;
+    color: #ddd;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+    padding: 8px 12px;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.welcome-text h1 {
+    margin: 0;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+.welcome-text .sub-heading, .welcome-text .sub-text {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.button-group {
+    display: flex;
+    gap: 0px; 
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.btn-primary {
+    background-color: #402ecc;
+    color: #ffffff;
+}
+
+.btn-secondary {
+    background-color: #402ecc;
+    color: #ffffff;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    opacity: 0.8;
+}
+
+.signup-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('vibrant-esports-event-background-with-neon-game-controllers-futuristic-digital-elements_43969-62587.avif'); 
+    background-size: cover;
+    background-position: center;
+}
+
+
+.signup-page .signup-container {
+    display: flex;
+    width: 800px;
+    height: 500px;
+    background-color: #2a2a2a;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.signup-page .signup-left {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    background-color: #333333;
+}
+
+.signup-page .signup-left h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.signup-page .signup-left input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #444;
+    color: #fff;
+}
+
+.signup-page .signup-left .signup-btn {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2ecc71;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.signup-page .signup-left .signup-btn:hover {
+    opacity: 0.9;
+}
+
+
+.signup-page .signup-left .footer-text {
+    margin-top: 20px; 
+    font-size: 12px;
+    text-align: center;
+    color: #777;
+}
+
+
+.signup-page .signup-left .login-link {
+    font-size: 14px;
+    text-align: center;
+    color: #3498db;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.signup-page .signup-left .login-link a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.signup-page .signup-left .login-link a:hover {
+    text-decoration: underline;
+}
+
+.signup-page .signup-right {
+    width: 50%;
+    padding: 40px;
+    background-image: url('Earn_Money_gaming-min.png'); 
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-page .signup-right h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.signup-page .promo-text h3 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.signup-page .promo-text p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.signup-page .view-more-btn {
+    padding: 12px 20px;
+    border-radius: 10px;
+    background-color: #e74c3c;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.signup-page .view-more-btn:hover {
+    opacity: 0.9;
+}
+
+/* General styling for the login page */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #360660;
+    background-image: url('background-image.jpg'); /* Update with actual image path */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Styling for the container of the login form */
+.login-page .login-container {
+    display: flex;
+    width: 800px;
+    height: 500px;
+    background-color: #2a2a2a;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the left side (form area) */
+.login-page .login-left {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #333333;
+}
+
+/* Heading for the form */
+.login-page .login-left h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Text inputs for email and password */
+.login-page .login-left input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #444;
+    color: #fff;
+}
+
+/* Login button */
+.login-page .login-left .submit-btn {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #3498db;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* Hover effect for buttons */
+.login-page .login-left .submit-btn:hover {
+    opacity: 0.9;
+}
+
+/* "Don't have an account? Sign Up" link */
+.login-page .login-left .signup-link {
+    font-size: 14px;
+    text-align: center;
+    color: #3498db;
+    cursor: pointer;
+    margin-bottom: 15px; /* Moved up closer to the login button */
+}
+
+.login-page .login-left .signup-link a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.login-page .login-left .signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Footer text styling */
+.login-page .login-left .footer-text {
+    margin-top: auto;
+    font-size: 12px;
+    text-align: center;
+    color: #777;
+}
+
+/* Styling for the right side (image and promo text) */
+.login-page .login-right {
+    width: 50%;
+    padding: 40px;
+    background-image: url('background-image.jpg'); /* Update with actual image path */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Heading for promo text */
+.login-page .login-right h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* Promo text styling */
+.login-page .promo-text h3 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.login-page .promo-text p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* View More button */
+.login-page .view-more-btn {
+    padding: 12px 20px;
+    border-radius: 10px;
+    background-color: #e74c3c;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.login-page .view-more-btn:hover {
+    opacity: 0.9;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0d0d1f;
+  color: #eaeaea;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1a1a3b;
+  border-bottom: 2px solid #2a2a5e;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar .logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.navbar .logo span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #00aaff;
+}
+
+.nav-links a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #eaeaea;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00aaff;
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search-input {
+  padding: 0.5rem;
+  background-color: #1a1a3b;
+  border: 1px solid #2a2a5e;
+  color: #eaeaea;
+  border-radius: 5px;
+}
+
+.join-btn {
+  background-color: #00aaff;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.join-btn:hover {
+  background-color: #0088cc;
+}
+
+.arrow-icon {
+  padding: 0.5rem 1rem;
+  background-color: #1a1a3b;
+  border: none;
+  cursor: pointer;
+  color: #00aaff;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.arrow-icon:hover {
+  transform: rotate(180deg);
+}
+
+.logout-box {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: #222;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.logout-box button {
+  background-color: #ff4757;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.logout-box button:hover {
+  background-color: #e84141;
+}
+
+.hero-section {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #00aaff;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px #000000;
+}
+
+.hero-section h2 {
+  font-size: 1.5rem;
+  color: #eaeaea;
+  margin-bottom: 1.5rem;
+}
+
+.about-btn {
+  background-color: #00aaff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.about-btn:hover {
+  background-color: #0088cc;
+}
+
+.vertical-nav {
+  position: fixed;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.vertical-nav span {
+  color: #00aaff;
+  cursor: pointer;
+}
+
+.logout-btn {
+  background-color: #ff4757;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  margin-top: 1rem;
+}
+
+.logout-btn:hover {
+  background-color: #e84141;
+}
+
+.social-icons {
+  position: fixed;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.social-icons .icon {
+  color: #00aaff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.social-icons .icon:hover {
+  color: #0088cc;
+}
+
+
+
+
+
+
+
